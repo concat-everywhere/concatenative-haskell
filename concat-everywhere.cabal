@@ -1,0 +1,36 @@
+cabal-version:       2.2
+
+name:                concat-everywhere
+version:             0.0.1.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/concat-everywhere#readme
+license:             BSD-3-Clause
+license-file:        LICENSE
+author:              J. R. Hill
+maintainer:          justin@so.dang.cool
+copyright:           2024 J. R. Hill
+category:            Control
+build-type:          Simple
+extra-source-files:  README.md
+                     CHANGELOG.md
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Control.Concatenative
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
+                       -XPostfixOperators
+
+source-repository head
+  type:     git
+  location: https://github.com/githubuser/really-concatenative
